@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dojo Show</title>
+  </head>
+  <body>
+    <style>
+      .container{
+        padding: 10px;
+        background-color: rgb(237, 186, 237);
+        height: 400px;
+        width: 500px;
+        margin: 50px;
+      }
+      table{
+        margin: 20px;
+      }
+      th{
+        border: 2px solid black;
+        background-color: aliceblue;
+
+      }
+      td{
+        border: 2px solid black;
+        background-color: aliceblue;
+      }
+      .b1{
+        background-color: black;
+        color: aliceblue;
+        padding: 5px;
+        margin: 20px;
+      }
+    </style>
+    <div class="container">
+      <h1>{{dojo.name}} Ninjas</h1>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {% for ninja in dojo.ninjas %}
+              <tr>
+                <td>{{ninja.first_name}}</td>
+                <td>{{ninja.last_name}}</td>
+                <td>{{ninja.age}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </form>
+      <a href="/" class="b1">Home</a>
+    </div>
+  </body>
+</html>

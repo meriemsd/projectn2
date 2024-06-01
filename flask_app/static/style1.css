@@ -1,0 +1,19 @@
+h1{
+    color: violet;
+    align-items: center;
+    margin: 50px;
+}
+
+.container{
+    background-color: slategrey;
+    padding: 50px;
+    height: 400px;
+    width: 350px;
+    margin: 150px;
+}
+
+.b1{
+    background-color: violet;
+    color: black;
+
+}
